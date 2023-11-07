@@ -18,7 +18,7 @@ function App() {
             ...prevTodos,
             { title: newTodo, completed: false, id: Math.random() }
         ]);
-        setNewTodo(''); // Clearing the input field after submitting
+        setNewTodo(newTodo); // Clearing the input field after submitting
     }
 
     return (
